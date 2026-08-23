@@ -12,13 +12,13 @@
 ---
 
 ## 📌 Executive Summary & Business Problem
-Star Convenience Store (SCS) is an established neighborhood retailer with over 13 years of successful operation. Recently, SCS experienced an unprecedented surge in daily customer footfall, **jumping from an historical baseline of 200–250 patrons to over 1,000–1,200 daily customers.**
+Star Convenience Store (SCS) is an established neighborhood retailer with over 13 years of successful operation. Recently, SCS experienced an unprecedented surge in daily customer footfall—**jumping from an historical baseline of 200–250 patrons to over 1,000–1,200 daily customers.**
 
 Because daily checkouts, sales logging, and inventory tracking were handled entirely via manual, paper-based registers, the store’s infrastructure collapsed under this increased demand:
 * **Counter Friction:** Manual cash register calculations created severe bottlenecks, long wait times, and frequent human billing errors.
 * **Inventory Blindness:** Real-time stock levels were completely untracked, forcing staff to rely on ad-hoc visual shelf checks.
 * **Financial Loss:** High-velocity essentials (dairy, fresh bread, eggs, popular packaged snacks) frequently stocked out, leading to severe **revenue leakage** and capping quarterly growth at **exactly 4% against a 15% market potential**.
-* **Labour Overhead:** Retail associates spent over **six (6) hours weekly** manually reconciling handwritten paper logs against physical shelf counts and distributor paper invoices just to catch low stock.
+* **Labor Overhead:** Retail associates spent over **six (6) hours weekly** manually reconciling handwritten paper logs against physical shelf counts and distributor paper invoices just to catch low stock.
 
 ## 🚀 The Solution: SCS Order Management System (OMS)
 This project outlines the end-to-end digital transformation of Star Convenience Store through the implementation of a centralized, real-time **Order Management System (OMS)** integrated with a barcode-enabled POS terminal. 
@@ -47,19 +47,24 @@ scs-order-management-system/
 │   ├── SCS-Current-State-L1-Flow.svg         # High-level current manual transaction flow
 │   ├── SCS-Future-State-L1-Flow.svg         # High-level future automated transaction flow
 │   ├── SCS-AS-IS-BPMN-Swimlane.svg          # BPMN 2.0 modeling of the manual paper bottlenecks
-│   └── SCS-TO-BE-BPMN-Swimlane.svg          # BPMN 2.0 modeling of the target digital automated state
+│   ├── SCS-AS-IS-BPMN-Swimlane.drawio       # Editable Draw.io file for manual processes
+│   ├── SCS-TO-BE-BPMN-Swimlane.svg          # BPMN 2.0 modeling of the target digital automated state
+│   └── SCS-TO-BE-BPMN-Swimlane.drawio       # Editable Draw.io file for digital processes
 │
 ├── 04-use-cases/
 │   ├── SCS-Use-Case-Document.pdf            # Functional actor-system boundary descriptions
 │   └── SCS-Use-Case-Document.docx
 │
 ├── 05-brd/
-│   ├── SCS-Business-Requirements-Document.pdf  # Master BRD with high-level business rules & scope
-│   └── SCS-Business-Requirements-Document.docx
+│   ├── SCS-Business-Requirements-Document-v4.0.pdf  # Master BRD with high-level business rules & scope
+│   └── SCS-Business-Requirements-Document-v4.0.docx
 │
-└── 06-prd/
-    ├── SCS-Product-Requirements-Document.pdf  # Master Agile PRD with Gherkin User Stories
-    └── SCS-Product-Requirements-Document.docx
+├── 06-prd/
+│   ├── SCS-Product-Requirements-Document.pdf  # Master Agile PRD with Gherkin User Stories
+│   └── SCS-Product-Requirements-Document.docx
+│
+└── 07-database-design/
+    └──  ER-Model.svg                       # Fully normalized relational database schema
 ```
 
 ---
@@ -67,7 +72,7 @@ scs-order-management-system/
 ## 🛠️ Artifact Delivery Lifecycle Summary
 
 ### 📊 [01] Business Case
-Provides the commercial and operational justification for the digital transformation. It performs a rigorous root-cause analysis of the store's 11% point gap, details the quantified business impacts, and establishes the "As-Is" vs. "To-Be" strategic vision.
+Provides the commercial and operational justification for the digital transformation. It performs a rigorous root-cause analysis of the store's 11% revenue growth gap, details the quantified business impacts, and establishes the "As-Is" vs. "To-Be" strategic vision.
 
 ### 🗣️ [02] Elicitation Findings
 Logs the structured stakeholder interviews conducted with the Store Owner and three Retail Associates. These notes detail the day-to-day transaction workflows, visual audit methods, payment processing mechanics, and existing paper-based ledger systems.
@@ -98,6 +103,16 @@ Translates high-level business requirements into an executable, Agile-ready Prod
 9. **Feature 9:** Digital PO Transmission (direct vendor dispatch via WhatsApp Business API/Email/SMS).
 10. **Feature 10:** Goods Receipt Note (GRN) Verification (with short delivery and damaged/rejected goods logging).
 
+### 🗄️ [07] Entity-Relationship (ER) Data Model
+To bridge the gap between business rules and actual database implementation, I designed a fully normalized relational database schema to support the development team:
+* **Interactive Diagram:** [View Final ER Model (SVG)](./07-database-design/ER-Model.svg)
+
+This database schema includes role-based login (Employee Master), inventory controls (Product Master), customer sales headers and line items, purchase order headers and line items, goods receipt notes (GRN) for physical delivery verification with shortage and damage logging, and a notification queue for system resilience.
+
+<p align="center">
+  <img src="./07-database-design/ER-Model.svg" alt="SCS ER Model" width="850">
+</p>
+
 ---
 
 ## 📈 Demonstrated Technical Skills
@@ -107,19 +122,18 @@ As a Lead Business Analyst, this portfolio demonstrates mastery across several c
 * **Agile Product Ownership:** Structuring backlogs, writing user stories, and establishing clear business value.
 * **Behavior-Driven Development (BDD) & Gherkin:** Writing technical, standardized acceptance criteria ready for automated QA testing frameworks (e.g., Cucumber).
 * **System Boundary Management:** Standardizing scope definitions, defining pre-conditions/post-conditions, and establishing technical constraints.
+* **Relational Database Design & Schema Normalization:** Designing a highly normalized, structured database schema with appropriate junction tables, primary and foreign keys, and error-resilient notification queues to optimize application performance.
 
 ---
 
-## 🤝 Let's Connect!
+*For inquiries, professional opportunities, or to walk through these business analysis deliverables, feel free to connect with me!*
 
-Thank you for exploring this project! I am always open to discussing digital transformation, retail systems architecture, agile product delivery, or potential professional opportunities. Feel free to reach out through any of the channels below:
+## 🤝 Connect with Me!
 
-[![LinkedIn Badge](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/ritviksakpal/)
-[![GitHub Badge](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/ritviksakpal45)
-[![Email Badge](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:ritviksakpal@gmail.com)
+I am always open to discussing digital transformation, retail systems architecture, Agile product ownership, or business analysis opportunities. Let's connect and build something impactful together!
 
-* **LinkedIn:** [linkedin.com/in/ritviksakpal](https://www.linkedin.com/in/ritviksakpal/)
-* **GitHub Portfolio:** [github.com/ritviksakpal45](https://github.com/ritviksakpal45)
-* **Email Direct:** [ritviksakpal@gmail.com](mailto:ritviksakpal@gmail.com)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/ritviksakpal/)
+[![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/ritviksakpal45)
+[![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:ritviksakpal@gmail.com)
+[![Portfolio](https://img.shields.io/badge/Portfolio-00C7B7?style=for-the-badge&logo=about.me&logoColor=white)](https://github.com/ritviksakpal45/scs-order-management-system)
 
-*"Bridging the gap between manual business problems and scalable, digital product solutions."*
