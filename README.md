@@ -103,7 +103,7 @@ Translates high-level business requirements into an executable, Agile-ready Prod
 
 ### 🗄️ 7. Entity-Relationship (ER) Data Model
 To bridge the gap between business rules and actual database implementation, I designed a fully normalized relational database schema to support the development team:
-* **Interactive Diagram:** [View Final ER Model (SVG)](./07-database-design/ER-Model.svg)
+* **ER Data Model Diagram:** [View Final ER Model (SVG)](./07-database-design/ER-Model.svg)
 
 This database schema includes role-based login (Employee Master), inventory controls (Product Master), customer sales headers and line items, purchase order headers and line items, goods receipt notes (GRN) for physical delivery verification with shortage and damage logging, and a notification queue for system resilience.
 
