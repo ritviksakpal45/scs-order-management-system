@@ -1,6 +1,6 @@
 # Star Convenience Store (SCS) - Order Management System (OMS) Digital Transformation
 **Lead Business Analyst:** Ritvik Sakpal  
-**Project Status:** Completed / Portfolio-Ready  
+**Project Status:** Completed  
 **Domain:** Retail POS, Closed-Loop Replenishment, & Inventory Management  
 
 ---
@@ -12,7 +12,7 @@
 ---
 
 ## 📌 Executive Summary & Business Problem
-Star Convenience Store (SCS) is an established neighborhood retailer with over 13 years of successful operation. Recently, SCS experienced an unprecedented surge in daily customer footfall—**jumping from an historical baseline of 200–250 patrons to over 1,000–1,200 daily customers.**
+Star Convenience Store (SCS) is an established neighborhood retailer with over 13 years of successful operation. Recently, SCS experienced an unprecedented surge in daily customer footfall **jumping from an historical baseline of 200–250 patrons to over 1,000–1,200 daily customers.**
 
 Because daily checkouts, sales logging, and inventory tracking were handled entirely via manual, paper-based registers, the store’s infrastructure collapsed under this increased demand:
 * **Counter Friction:** Manual cash register calculations created severe bottlenecks, long wait times, and frequent human billing errors.
@@ -47,17 +47,15 @@ scs-order-management-system/
 │   ├── SCS-Current-State-L1-Flow.svg         # High-level current manual transaction flow
 │   ├── SCS-Future-State-L1-Flow.svg         # High-level future automated transaction flow
 │   ├── SCS-AS-IS-BPMN-Swimlane.svg          # BPMN 2.0 modeling of the manual paper bottlenecks
-│   ├── SCS-AS-IS-BPMN-Swimlane.drawio       # Editable Draw.io file for manual processes
-│   ├── SCS-TO-BE-BPMN-Swimlane.svg          # BPMN 2.0 modeling of the target digital automated state
-│   └── SCS-TO-BE-BPMN-Swimlane.drawio       # Editable Draw.io file for digital processes
+│   └── SCS-TO-BE-BPMN-Swimlane.svg          # BPMN 2.0 modeling of the target digital automated state
 │
 ├── 04-use-cases/
 │   ├── SCS-Use-Case-Document.pdf            # Functional actor-system boundary descriptions
 │   └── SCS-Use-Case-Document.docx
 │
 ├── 05-brd/
-│   ├── SCS-Business-Requirements-Document-v4.0.pdf  # Master BRD with high-level business rules & scope
-│   └── SCS-Business-Requirements-Document-v4.0.docx
+│   ├── SCS-Business-Requirements-Document.pdf  # Master BRD with high-level business rules & scope
+│   └── SCS-Business-Requirements-Document.docx
 │
 ├── 06-prd/
 │   ├── SCS-Product-Requirements-Document.pdf  # Master Agile PRD with Gherkin User Stories
@@ -71,26 +69,26 @@ scs-order-management-system/
 
 ## 🛠️ Artifact Delivery Lifecycle Summary
 
-### 📊 [01] Business Case
+### 📊 1. Business Case
 Provides the commercial and operational justification for the digital transformation. It performs a rigorous root-cause analysis of the store's 11% revenue growth gap, details the quantified business impacts, and establishes the "As-Is" vs. "To-Be" strategic vision.
 
-### 🗣️ [02] Elicitation Findings
+### 🗣️ 2. Elicitation Findings
 Logs the structured stakeholder interviews conducted with the Store Owner and three Retail Associates. These notes detail the day-to-day transaction workflows, visual audit methods, payment processing mechanics, and existing paper-based ledger systems.
 
-### 🗺️ [03] Process Analysis (BPMN 2.0)
+### 🗺️ 3. Process Analysis (BPMN 2.0)
 Visualizes the operational workflows using professional BPMN 2.0 swimlane diagrams:
 * **AS-IS Swimlane:** Highlights the severe bottlenecks in paper-based transaction logging and manual supplier reordering.
 * **TO-BE Swimlane:** Models the streamlined, automated checkout, real-time Product Master stock decrements, and automatic distributor PO routing.
 
-### 🎭 [04] Use Cases
+### 🎭 4. Use Cases
 Bridges the gap between strategic business objectives and technical implementation. It defines the exact boundaries, primary/alternative flows, pre-conditions, and post-conditions for key actors (Store Owner, Retail Associate, and Distributor) interacting with the OMS.
 
-### 📝 [05] Business Requirements Document
+### 📝 5. Business Requirements Document
 Establishes the official scope boundaries, critical business rules, and technical objectives. Highlights:
 * **Scope Control:** Explicitly defines out-of-scope boundaries (e.g., active Customer Udhaar credit ledger tracking, employee payroll) to prevent scope creep.
 * **Core Business Rules:** Defines `BR-01` (low-stock threshold controls), `BR-02` (checkout transaction compliance), and `BR-03` (automated closed-loop replenishment).
 
-### 📋 [06] Product Requirements Document
+### 📋 6. Product Requirements Document
 Translates high-level business requirements into an executable, Agile-ready Product Backlog. It comprises **10 complete, prioritized features** documented in standard User Story format with highly detailed, executable **Gherkin (Given-When-Then) Acceptance Criteria**:
 1. **Feature 1:** POS Barcode Scanning (with dirty/torn barcode fallback).
 2. **Feature 2:** Variable-Weight Scale Support (integrated checkout pricing calculation).
@@ -103,7 +101,7 @@ Translates high-level business requirements into an executable, Agile-ready Prod
 9. **Feature 9:** Digital PO Transmission (direct vendor dispatch via WhatsApp Business API/Email/SMS).
 10. **Feature 10:** Goods Receipt Note (GRN) Verification (with short delivery and damaged/rejected goods logging).
 
-### 🗄️ [07] Entity-Relationship (ER) Data Model
+### 🗄️ 7. Entity-Relationship (ER) Data Model
 To bridge the gap between business rules and actual database implementation, I designed a fully normalized relational database schema to support the development team:
 * **Interactive Diagram:** [View Final ER Model (SVG)](./07-database-design/ER-Model.svg)
 
