@@ -5,9 +5,9 @@
 
 ---
 
-[![Business Analysis](https://img.shields.io/badge/Role-Lead%20Business%20Analyst-blue.svg)](https://github.com/)
-[![Project Status](https://img.shields.io/badge/Project%20Status-Completed%20%2F%20Portfolio-green.svg)](https://github.com/)
-[![Methodology](https://img.shields.io/badge/Methodology-Agile%20%2F%20BDD-orange.svg)](https://github.com/)
+[![Business Analysis](https://img.shields.io/badge/Role-Lead%20Business%20Analyst-blue.svg)]
+[![Project Status](https://img.shields.io/badge/Project%20Status-Completed%20%2F%20Portfolio-green.svg)]
+[![Methodology](https://img.shields.io/badge/Methodology-Agile%20%2F%20BDD-orange.svg)]
 
 ---
 
@@ -131,7 +131,4 @@ As a Lead Business Analyst, this portfolio demonstrates mastery across several c
 I am always open to discussing digital transformation, retail systems architecture, or business analysis opportunities. Let's connect and build something impactful together!
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/ritviksakpal/)
-[![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/ritviksakpal45)
 [![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:ritviksakpal@gmail.com)
-[![Portfolio](https://img.shields.io/badge/Portfolio-00C7B7?style=for-the-badge&logo=about.me&logoColor=white)](https://github.com/ritviksakpal45/scs-order-management-system)
-
