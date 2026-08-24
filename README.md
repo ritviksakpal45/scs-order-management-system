@@ -5,9 +5,9 @@
 
 ---
 
-[![Business Analysis](https://img.shields.io/badge/Role-Lead%20Business%20Analyst-blue.svg)]
-[![Project Status](https://img.shields.io/badge/Project%20Status-Completed%20%2F%20Portfolio-green.svg)]
-[![Methodology](https://img.shields.io/badge/Methodology-Agile%20%2F%20BDD-orange.svg)]
+![Business Analysis](https://img.shields.io/badge/Role-Lead%20Business%20Analyst-blue.svg)
+![Project Status](https://img.shields.io/badge/Project%20Status-Completed%20%2F%20Portfolio-green.svg)
+![Methodology](https://img.shields.io/badge/Methodology-Agile%20%2F%20BDD-orange.svg)
 
 ---
 
